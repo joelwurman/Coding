@@ -17,12 +17,12 @@ def RNA_to_Aminoacid(codon):
         UGA Stop   CGA R      AGA R      GGA G
         UGG W      CGG R      AGG R      GGG G """
 
-    Genetic_Code_table_NoNewLine = genetic_code_table.replace('\n', ' ')
-    Genetic_Code_string = Genetic_Code_table_NoNewLine.split(' ')
+    genetic_code_table_no_new_line = genetic_code_table.replace('\n', ' ')
+    genetic_code_string = genetic_code_table_no_new_line.split(' ')
 
     codon_list, aminoacid_list = [], []
     iterator = 1
-    for item in Genetic_Code_string:
+    for item in genetic_code_string:
         if item != '' and item != 'V\n':
             iterator += 1
             if iterator % 2 == 0:
@@ -31,5 +31,3 @@ def RNA_to_Aminoacid(codon):
                 aminoacid_list.append(item)
     genetic_code_dictionary = dict(zip(codon_list, aminoacid_list))
     return genetic_code_dictionary[codon]
-
-

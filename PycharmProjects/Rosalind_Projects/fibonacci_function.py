@@ -6,7 +6,6 @@ def fibonacci(x):
         return x
 
 
-
 while True:
     print(fibonacci(int(input())))
     print('\n')

@@ -17,9 +17,6 @@ while a != b:
     i = -1
     a[]
 
-
-
-
 # char_list = sorted(symbols.split(' '))
 # print(char_list)
 # # Get all permutations of length 2
